@@ -12,7 +12,7 @@ Welcome to my portfolio! 🚀 Here, I showcase a collection of my works and give
 - Home
 - About Me & Skills
 - Projects
-- Blog
+//- Blog
 - Contact Me
 
 ## Getting Started
@@ -20,7 +20,7 @@ Welcome to my portfolio! 🚀 Here, I showcase a collection of my works and give
 1. **Clone the Repository:**
 
    ```
-   https://github.com/jcblanc2/Portfolio.git
+   https://github.com/jcblanc2/Portfolio-ajay.git
    ```
 
 2. **Install Dependencies:**
