@@ -20,7 +20,7 @@ Welcome to my portfolio! 🚀 Here, I showcase a collection of my works and give
 1. **Clone the Repository:**
 
    ```
-   https://github.com/jcblanc2/Portfolio-ajay.git
+   https://github.com/AjaySmarc/portfolio-ajay.git
    ```
 
 2. **Install Dependencies:**
