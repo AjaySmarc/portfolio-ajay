@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #0f172a;
+}
+
+img{
+    width: 60%;
+}
+
+
+@layer components {
+}
+
+@layer utilities {
+    .transition-li {
+        @apply transition-all duration-200 ease-in-out;
+    }
+
+    .transform-li{
+        @apply text-secondary transform scale-110;
+    }
+
+    .active{
+        @apply text-secondary;
+    }
+
+
+    /* .nav-hover {
+        @apply relative after:content-[''] after:absolute after:w-full after:transform after:scale-x-0 after:rounded-md after:h-[0.05em] after:bottom-0 after:left-0 after:bg-primary-red after:origin-bottom-right after:transition after:duration-300 after:ease-out hover:after:transform hover:after:scale-x-100 hover:after:origin-bottom-left;
+    } */
+
+}
