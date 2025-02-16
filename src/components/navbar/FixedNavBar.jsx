@@ -19,7 +19,7 @@ const FixedNavBar = () => {
     const Brand = () => (
         <div className="flex items-center justify-between py-5 md:block">
             <Link to={'/'} className="flex gap-1 group">
-                <span className="font-bold text-[1.3rem] text-white group-hover:text-secondary transition-colors duration-500">JC</span>
+                <span className="font-bold text-[1.3rem] text-white group-hover:text-secondary transition-colors duration-500">AM</span>
                 <span className="w-2 h-2 rounded-full bg-primary-red group-hover:bg-white bg-secondary transition-colors duration-500"></span>
             </Link>
 
