@@ -108,21 +108,16 @@ const Hero = () => {
 
                         {/* Second Button: Download Resume */}
                         <CustomButton
-                        label={'Download Resume'}
-                        onClick={() => {
-                            const link = document.createElement('a');
-                            link.href = '/resume.pdf'; // Path to your resume file in public folder
-                            link.download = 'Resume.pdf'; // Set download filename
-                            document.body.appendChild(link);
-                            link.click();
-                            document.body.removeChild(link);
-                        }}
-                        svg={
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-                                <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h3.75V3.75a.75.75 0 011.5 0v5.5h3.75a.75.75 0 010 1.5H9.75v5.5a.75.75 0 01-1.5 0v-5.5H3.75A.75.75 0 013 10z" clipRule="evenodd" />
-                            </svg>
+                            label={"Download Resume"}
+                            onClick={() => window.open("/resume.pdf", "_blank")}
+                            svg={
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
+                                <path fillRule="evenodd" d="M10 2a.75.75 0 01.75.75V13.19l2.22-2.22a.75.75 0 011.06 1.06l-3.5 3.5a.75.75 0 01-1.06 0l-3.5-3.5a.75.75 0 011.06-1.06l2.22 2.22V2.75A.75.75 0 0110 2z" clipRule="evenodd" />
+                                <path d="M4 14.25a.75.75 0 01.75-.75h10.5a.75.75 0 110 1.5H4.75a.75.75 0 01-.75-.75z" />
+                                </svg>
                             }
-                            />
+                        />
+
                         </div>
 
                     </div>
