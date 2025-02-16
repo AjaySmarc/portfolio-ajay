@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { fixedNavItems } from '../../utils';
 import { motion, useAnimation } from "framer-motion";
-import { Link, animateScroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 const FixedNavBar = () => {
     const [state, setState] = useState(false)
