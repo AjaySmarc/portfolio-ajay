@@ -91,4 +91,10 @@ const floatingNavItems = [
     //         <IconArticle className="h-4 w-4 fill-white hover:fill-secondary" activeclass="active" />
     //     ),
     // },
+     {
+        name: "Resume",
+        icon: (
+            <IconPrompt className="h-4 w-4 fill-white hover:fill-secondary" activeclass="active" />
+        ),
+    },
 ];
