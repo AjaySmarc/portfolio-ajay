@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="flex flex-col justify-center items-center gap-3 md:flex-row md:justify-between md:items-center">
                 <NowPlaying />
                 <p className='text-secondary-text text-center'>
-                    © 2025 Ajay mudettula. All Rights Reserved.
+                    © 2025 Abhi mudettula. All Rights Reserved.
                 </p>
             </div>
         </section >
