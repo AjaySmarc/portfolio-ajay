@@ -3,6 +3,7 @@ import About from "../components/sections/About";
 import Projects from "../components/sections/Projects";
 import Contact from "../components/sections/Contact";
 // import Blog from "../components/sections/Blog";
+import Resume from "../components/sections/Resume";
 import Footer from "../components/sections/Footer";
 import { Analytics } from "@vercel/analytics/react";
 import { Helmet } from "react-helmet";
@@ -35,6 +36,7 @@ const Main = () => {
             <About />
             <Projects />
             {/* <Blog /> */}
+            <Resume/>
 
             <Contact />
             <Footer />
