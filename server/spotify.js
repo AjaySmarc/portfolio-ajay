@@ -17,5 +17,5 @@ export const getAccessToken = async (client_id, client_secret, refresh_token) =>
         }),
     });
 
-    return response.json();
+    return response.json(); 
 };

@@ -1,15 +1,30 @@
-export const sendEmail = async (formData) => {
-    try {
-        const response = await fetch('https://portfolioapi-2a97.onrender.com/send-email', {
-            method: 'POST',
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ formData: formData })
-        });
+import emailjs from '@emailjs/browser';
 
-        return response;
-    } catch (error) {
-        console.error('Error sending message:', error.message);
-    }
-}
+export const sendEmail = async (formData) => {
+  try {
+    const response = await emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        user_name: formData.user_name || 'Anonymous',
+        user_email: formData.user_email,
+        user_subject: formData.user_subject,
+        user_message: formData.user_message,
+        email: formData.user_email, // because template expects it
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    );
+
+    return {
+      ok: true,
+      message: 'Thanks for visiting! Your message has been sent.',
+      status: response.status,
+    };
+  } catch (error) {
+    console.error('EmailJS Error:', error);
+    return {
+      ok: false,
+      message: 'Unable to send your message. Please try again.',
+    };
+  }
+};

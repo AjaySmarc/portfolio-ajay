@@ -1,70 +1,119 @@
-import chatbot from "../assets/images/chatbot.png";
-import linkup from "../assets/images/linkup.png";
+// import chatbot from '../assets/images/chatbot.png';
+import linkup from '../assets/images/linkup.png';
+// import linkup from '../assets/projects/linkup.png';
+// import chatbot from '../assets/projects/chatbot.png';
+import chatwithajay from '../assets/images/chatwithajay.png';
+import sentiment from '../assets/images/sentiment.png';
+import resumegenius from '../assets/images/resumegenius.png';
+import portfolio from '../assets/images/portfolio.png';
+// import dsa from '../assets/projects/dsa.png';
+// import chatui from '../assets/images/chatui.png';
+
 // import a1 from "../assets/images/a1.webp";
 // import a2 from "../assets/images/a2.webp";
 // import a4 from "../assets/images/a4.webp";
 // import a5 from "../assets/images/a5.webp";
 
-
-
-
 const getGreeting = () => {
-    const hour = new Date().getHours();
-    if (hour < 12) return "Good Morning";
-    else if (hour < 18) return "Good Afternoon";
-    else return "Good Evening";
+  const hour = new Date().getHours();
+  if (hour < 12) return 'Good Morning';
+  else if (hour < 18) return 'Good Afternoon';
+  else return 'Good Evening';
 };
 
 export const headlines = [
-    `${getGreeting()}, I'm Ajay.`,
-    "I'm a student.",
-    "Over the past few years, I've been learning and building projects, strengthening my problem-solving skills, and tackling both backend and frontend challenges."
+  `${getGreeting()}, I'm Ajay.`,
+  "I'm a student.",
+  "Over the past few years, I've been learning and building projects, strengthening my problem-solving skills, and tackling both backend and frontend challenges.",
 ];
 
 export const fixedNavItems = [
-    { name: "Home" },
-    { name: "About" },
-    { name: "Projects" },
-    // { name: "Blog" },
-    { name: "Contact" }
-]
+  { name: 'Home' },
+  { name: 'Resume' },
+  { name: 'About' },
+  { name: 'Projects' },
+
+  // { name: "Blog" },
+  { name: 'Contact' },
+];
 
 export const projects = [
-    {
-        title: 'LINK-UP',
-        image: linkup,
-        linkGithub: 'https://github.com/AjaySmarc/LinkUp-mern-app',
-        linkOnline: null,
-        description: 'Link up is a web app that provides real-time group engagement like vedio calls,screenshare and group chats.',
-        techStack: ['React', 'Tailwind CSS', 'MongoDB', 'Agora API']
-    },
-    {
-        title: ' Rental Price Prediction Chatbot',
-        image: chatbot,
-        linkOnline: null,
-        linkGithub: null,
-        description: ' a chatbot that predicts rental prices based on factors like location, property size, number of rooms, amenities,and market trends',
-        techStack: ['python', 'Node', 'openAI API']
-    }
+  {
+    title: 'LINK-UP',
+    image: linkup,
+    linkGithub: 'https://github.com/AjaySmarc/LinkUp-mern-app',
+    linkOnline: null,
+    description:
+      'A real-time communication web app supporting video calls, screen sharing, and group chats using Agora.',
+    techStack: ['React', 'Tailwind CSS', 'MongoDB', 'Agora API'],
+  },
+  // {
+  //   title: 'Rental Price Prediction Chatbot',
+  //   image: chatbot,
+  //   linkGithub: 'https://github.com/AjaySmarc/ChatwithAjay-API',
+  //   linkOnline: null,
+  //   description:
+  //     'An AI chatbot that predicts rental prices using property features such as city, rooms, area, and amenities.',
+  //   techStack: ['Python', 'Node.js', 'OpenAI API'],
+  // },
+  {
+    title: 'ChatwithAjay API',
+    image: chatwithajay,
+    linkGithub: 'https://github.com/AjaySmarc/ChatwithAjay-API',
+    linkOnline: null,
+    description:
+      'Backend API integrating prompt engineering and OpenAI to generate AI-powered chat responses.',
+    techStack: ['Node.js', 'Express', 'OpenAI API'],
+  },
+  {
+    title: 'YouTube Sentiment Analyzer',
+    image: sentiment,
+    linkGithub: 'https://github.com/AjaySmarc/YouTube-Sentiment-Analyzer',
+    linkOnline: null,
+    description:
+      'Scrapes YouTube comments, performs sentiment analysis, and visualizes insights.',
+    techStack: ['Python', 'Pandas', 'Scikit-Learn', 'NLP'],
+  },
+  {
+    title: 'ResumeGenius',
+    image: resumegenius,
+    linkGithub: 'https://github.com/AjaySmarc/ResumeGenius',
+    linkOnline: null,
+    description:
+      'A dynamic resume generator that builds ATS-friendly resumes based on user input.',
+    techStack: ['React', 'Tailwind CSS', 'Node.js'],
+  },
+  {
+    title: 'Portfolio Website',
+    image: portfolio,
+    linkGithub: 'https://github.com/AjaySmarc/portfolio-ajay',
+    linkOnline: 'https://portfolio-ajaymudettula.vercel.app/',
+    description:
+      'My personal portfolio website built with modern UI, animations, and responsive design.',
+    techStack: ['React', 'CSS', 'JavaScript'],
+  },
 ];
 
 export const skillsWork = [
-    'C',
-    'Java',
-    'NodeJS',
-    'Python',
-    'PostgreSQL',
-    'MySQL',
-    'JavaScript',
-    'Docker',
-    'AWS',
+  'Java',
+  'Python',
+  'C',
+  'JavaScript',
+  'Node.js',
+  'Express.js',
+  'MongoDB',
+  'MySQL',
+  'Firebase',
+  'REST APIs',
+  'MERN Stack',
+  'Docker',
+
+  'Git',
+  'OpenCV',
+  'MediaPipe',
 ];
 
-export const certificates = [
-    'Google AIML',
-    'Generative AI',
-    'Data Analyst'
-];
+export const certificates = ['Google AIML', 'Generative AI', 'Oracle SQL'];
 
 // export const articles = [
 //     {
@@ -95,10 +144,11 @@ export const certificates = [
 //     },
 // ];
 
-
 export const metadata = {
-    title: "Ajay Mudettula",
-    description: "This portfolio is a collection of my work that showcases my skills and creativity.",
-    imageURL: "https://avatars.githubusercontent.com/u/108766949?s=400&u=1671b3dfc6d09709a394c94b1566e56e6e3e16cd&v=4",
-    pageUrl: "https://www.johnclaytonblanc.com"
+  title: 'Ajay Mudettula',
+  description:
+    'This portfolio is a collection of my work that showcases my skills and creativity.',
+  imageURL:
+    'https://avatars.githubusercontent.com/u/108766949?s=400&u=1671b3dfc6d09709a394c94b1566e56e6e3e16cd&v=4',
+  pageUrl: 'https://www.johnclaytonblanc.com',
 };
