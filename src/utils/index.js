@@ -150,5 +150,5 @@ export const metadata = {
     'This portfolio is a collection of my work that showcases my skills and creativity.',
   imageURL:
     'https://avatars.githubusercontent.com/u/108766949?s=400&u=1671b3dfc6d09709a394c94b1566e56e6e3e16cd&v=4',
-  pageUrl: 'https://www.johnclaytonblanc.com',
+  pageUrl: 'https://portfolio-ajaymudettula.vercel.app/',
 };
